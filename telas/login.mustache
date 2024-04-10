@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    {{#accessGranted}}
+        <h1>Acesso concedido :)</h1>
+    {{/accessGranted}}
+    {{^accessGranted}}
+        <h1>Acesso negado ;(</h1>
+    {{/accessGranted}}
+    <a href="/inverter">Seguir para a rota para realizar a Inversão</a>
+</body>
+</html>
